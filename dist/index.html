@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="description" content="共看交互原型：在图片上的具体位置留下想法，浏览附近的共看。">
+<title>共看 · 交互原型</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="stage"><div id="device"><div id="app" aria-label="共看交互原型"></div></div></main>
+<aside id="preview-tools" aria-label="原型预览工具">
+  <div class="preview-name">共看<span>交互原型</span></div>
+  <button data-tool="note">笔记详情</button><button data-tool="cowatch">进入共看</button>
+  <div class="zoom-tools"><button data-tool="out" aria-label="缩小图片">−</button><output id="zoom-label">100%</output><button data-tool="in" aria-label="放大图片">＋</button></div>
+  <button data-tool="fit">还原图片</button><button data-tool="guide">重看使用引导</button>
+  <p>长按图片，留下共看<br>双击或滚轮缩放<br>放大后拖动查看</p>
+</aside>
+<script type="module" src="app.js"></script>
+</body>
+</html>
